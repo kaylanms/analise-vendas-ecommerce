@@ -1,16 +1,14 @@
 # 📊 Análise de Vendas - E-Commerce Brasileiro (Olist)
 
-![Preview do Relatório](images/preview_relatorio.png)
-
 🔗 **Acesse o relatório interativo gerado online:**
 
 > https://kaylanms.github.io/analise-vendas-ecommerce/outputs/relatorio_completo.html
 
+![Preview do Relatório](images/preview_relatorio.png)
+
 ---
 
 ![Demo do Projeto](images/notebook_preview.gif)
-
-![Top Categorias](images/top_categorias.png)
 
 ---
 
@@ -83,3 +81,5 @@ O projeto gera um **relatório em HTML**, com:
 - Maior margem: **relogios_presentes (82%)**
 
 ---
+
+Este projeto demonstra a aplicação prática da Análise de Dados para geração de valor em negócios digitais, utilizando técnicas de análise exploratória, visualização de dados, KPIs estratégicos e relatórios interativos.
