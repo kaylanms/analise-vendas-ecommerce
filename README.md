@@ -6,12 +6,6 @@
 
 ![Preview do Relatório](images/preview_relatorio.png)
 
----
-
-![Demo do Projeto](images/notebook_preview.gif)
-
----
-
 ## 📌 Sobre o Projeto
 
 Análise exploratória de dados de vendas do e-commerce brasileiro **Olist**, identificando:
@@ -79,6 +73,10 @@ O projeto gera um **relatório em HTML**, com:
 - Top 3 categorias = **25,6%** da receita
 - Categoria líder: **beleza_saude**
 - Maior margem: **relogios_presentes (82%)**
+
+---
+
+![Demo do Projeto](images/notebook_preview.gif)
 
 ---
 
