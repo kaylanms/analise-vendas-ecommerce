@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Olist Analytics</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 55px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    animation: fadeIn .8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(20px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.7em;
+    color: #2c2c2c;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin: 60px 0;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 32px 25px;
+    border-radius: 16px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    animation: slideUp .8s ease forwards;
+}
+
+@keyframes slideUp {
+    from { opacity:0; transform: translateY(30px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+.kpi-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+.kpi-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.2em;
+    opacity: .25;
+}
+
+.kpi-title {
+    font-size: .95em;
+    opacity: .9;
+    margin-bottom: 8px;
+}
+
+.kpi-value {
+    font-size: 2.1em;
+    font-weight: 800;
+}
+
+.section-title {
+    font-size: 1.9em;
+    color: #667eea;
+    margin-top: 70px;
+}
+
+.links-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.chart-link {
+    background: #667eea;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .35s;
+}
+
+.chart-link i {
+    font-size: 1.2em;
+}
+
+.chart-link:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 35px;
+    border-top: 2px solid #eee;
+}
+
+footer strong {
+    font-size: 1.15em;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #555;
+}
+
+@media(max-width:600px) {
+    .container {
+        padding: 35px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1><i class="fa-solid fa-chart-line"></i> Análise de Vendas Olist</h1>
+    <p>E-commerce brasileiro • Business Intelligence</p>
+</header>
+
+<section class="kpi-grid">
+
+<div class="kpi-card">
+    <i class="fa-solid fa-sack-dollar kpi-icon"></i>
+    <div class="kpi-title">Faturamento Total</div>
+    <div class="kpi-value">R$ 15,419,774</div>
+</div>
+
+<div class="kpi-card">
+    <i class="fa-solid fa-cart-shopping kpi-icon"></i>
+    <div class="kpi-title">Pedidos</div>
+    <div class="kpi-value">96,478</div>
+</div>
+
+<div class="kpi-card">
+    <i class="fa-solid fa-receipt kpi-icon"></i>
+    <div class="kpi-title">Ticket Médio</div>
+    <div class="kpi-value">R$ 159.83</div>
+</div>
+
+<div class="kpi-card">
+    <i class="fa-solid fa-box-open kpi-icon"></i>
+    <div class="kpi-title">Produtos</div>
+    <div class="kpi-value">32,216</div>
+</div>
+
+<div class="kpi-card">
+    <i class="fa-solid fa-percent kpi-icon"></i>
+    <div class="kpi-title">Margem Média</div>
+    <div class="kpi-value">69.8%</div>
+</div>
+
+<div class="kpi-card">
+    <i class="fa-solid fa-calendar-check kpi-icon"></i>
+    <div class="kpi-title">Melhor Mês</div>
+    <div class="kpi-value" style="font-size:1.25em;">November/2017</div>
+</div>
+
+</section>
+
+<h2 class="section-title"><i class="fa-solid fa-chart-pie"></i> Dashboards Interativos</h2>
+
+<div class="links-grid">
+
+<a href="dashboard_completo.html" class="chart-link" target="_blank">
+<i class="fa-solid fa-layer-group"></i> Dashboard Completo
+</a>
+
+<a href="dashboard_evolucao.html" class="chart-link" target="_blank">
+<i class="fa-solid fa-arrow-trend-up"></i> Evolução
+</a>
+
+<a href="dashboard_categorias.html" class="chart-link" target="_blank">
+<i class="fa-solid fa-trophy"></i> Categorias
+</a>
+
+<a href="heatmap_vendas.html" class="chart-link" target="_blank">
+<i class="fa-solid fa-fire"></i> Heatmap
+</a>
+
+<a href="treemap_categorias.html" class="chart-link" target="_blank">
+<i class="fa-solid fa-tree"></i> Treemap
+</a>
+
+</div>
+
+<footer>
+<strong>Kaylan Izaac</strong>
+<p><i class="fa-solid fa-envelope"></i> kaylanmtts@gmail.com</p>
+<p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/kaylanizaac</p>
+</footer>
+
+</div>
+
+</body>
+</html>
